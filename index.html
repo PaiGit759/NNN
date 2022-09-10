@@ -7,9 +7,10 @@
         var btn = document.getElementById('btn1');
         btn.addEventListener('click', function(){
             var xhr = new XMLHttpRequest();
-            xhr.open('GET','Data/index.txt',false); //index.txt  ../Data/ibdex.html
+            xhr.open('GET','Data/99999.jpeg',false); //index.txt  ../Data/ibdex.html
             xhr.send();
-            document.getElementById('p1').innerText = xhr.responseText;
+//            document.getElementById('p1').innerText = xhr.responseText;
+            document.getElementById('i1').src = xhr.responseURL;
 //            alert(xhr.responseText);
         })
     }
@@ -20,5 +21,6 @@
 
 <button id="btn1"> GET CONTENT </button>
 <p id="p1"></p>
+<img rcs="" id="i1"/>
 </body>
 </html> 
