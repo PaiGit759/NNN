@@ -7,7 +7,7 @@
         var btn = document.getElementById('btn1');
         btn.addEventListener('click', function(){
             var xhr = new XMLHttpRequest();
-            xhr.open('GET','index.txt',false); //index.txt  ../Data/ibdex.html
+            xhr.open('GET','Data/index.txt',false); //index.txt  ../Data/ibdex.html
             xhr.send();
             document.getElementById('p1').innerText = xhr.responseText;
 //            alert(xhr.responseText);
